@@ -1,7 +1,7 @@
 Debate App
 ----------
 
-TODO Poner nombre!!!
+TODO Poner nombre!!!  -> Taboo?
 Un torneo son muchas cosas!!
 
 Propósito
@@ -17,7 +17,7 @@ Crear una App para la gestión de torneos de debate {académico español}. Deber
 * Automatizar el proceso de puntuación de equipos/oradores
 	- Los jueces puntuan a los equipos en cada debate (items)
 	- Los jueces deciden qué equipo gana cada debate
-	- Los jueces obtienen un informe con estadísticas sobre cada equipo y cada orador
+	- Los jueces obtienen un informe con estadísticas sobre cada equipo y cada orador (al final del torneo)
 	- Los jueces votan al mejor orador (opcional)
 * Automatiza las calificaciones de los jueces (opcional)
 	- Los jueces se evalúan entre sí
@@ -45,7 +45,7 @@ Roles de un torneo de debate
 * Staff
 	- Coordinador de staff (1 por torneo, puede cambiar temas logísticos de forma manual)
 	- Asistente de sala (1 por sala - siempre en la misma sala, para todos los debates que haya en la misma)
-	- Corredores (depende de lo grande que sea el torneo, prescindibles si su función se automatiza)
+	- Corredores (opcional)(depende de lo grande que sea el torneo, prescindibles si su función se automatiza)
 	- Otros
 		- Distintos tipos de staff (fotógrafo, etc.) definidos por el coordinador de staff
 * Equipos (2 equipos por debate, entre 2 y 6 personas por equipo, dependiendo de cómo esté definido en el reglamento)
@@ -101,7 +101,7 @@ Casos de uso
 
 ### Juez
 * Firma una hoja de acta donde pone quién gana (incluyendo puntuaciones, items)
-* Emite un feedback sobre un debate concreto (a veces escrito) En la App: texto o audio. Idealmente, feedback para cada equipo y para cada orador.
+* Emite un feedback sobre un debate concreto (opcional, a veces escrito) En la App: texto o audio. Idealmente, feedback para cada equipo y para cada orador.
 * Los jueces se evalúan entre ellos (opcional, dependiendo del torneo).
 * Pone faltas de reglamento (llegar tarde a un debate, etc.)
 
@@ -123,7 +123,7 @@ Casos de uso
 * Define el anexo del acta, que contiene criterios para juzgar
 * Controla las faltas de reglamento, puestas por los jueces (normalmente es función de Tabuladores)
 * Toman medidas sobre las faltas de reglamento
-	- Expusión de un equipo
+	- Expulsión de un equipo
 	- Posibilidad de excluir del paso de fase
 	- 
 * Define los roles concretos de los jueces (asociados a cada debate), pudiendo cambiarlo de una ronda a otra
@@ -164,5 +164,10 @@ Casos de uso
 * Recibe quejas de equity
 
 
+## Asistente de sala
+* Reponer fungible en las salas (ej. agua)
+
+
 
 * Los usuarios podrán escribirse mensajes privados, que podrán tener forma de audio. Unidireccional: juez al equipo o juez al orador. El feedback podrá ser puntuado por el orador (no se permite una respuesta elaborada).
+* Reportar mensajes (mecanismos para controlar la toxicidad, expulsión de usuarios... - obligatorio en Red Social)
